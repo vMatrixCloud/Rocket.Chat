@@ -63,7 +63,7 @@ Template.body.onRendered ->
 
 Template.main.helpers
 	logged: ->
-		return Meteor.userId()?
+		return Meteor.userId()? or RocketChat.settings.get('Accounts_RegistrationRequired') is false
 
 	subsReady: ->
 		return not Meteor.userId()? or (FlowRouter.subsReady('userData', 'activeUsers'))
