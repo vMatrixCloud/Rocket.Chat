@@ -1,5 +1,5 @@
 applications:
-- name: chat
+- name: chat2
   mem: 512M
   buildpack: http://15.126.227.149/root/meteor-buildpack.git
   services:
