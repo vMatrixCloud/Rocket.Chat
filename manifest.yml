@@ -1,0 +1,7 @@
+applications:
+- name: chat
+  mem: 512M
+  buildpack: http://15.126.227.149/root/meteor-buildpack.git
+  services:
+    ${name}-db:
+      type: mongodb
